@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>🧁 Afetiva Pães e Doces ✨</title>
+    <!-- LINHA QUE TROCA O GLOBO PELO ÍCONE DA SUA MARCA -->
+    <link rel="icon" type="image/jpeg" href="img/logoafetiva.jpeg">
+    <style> 
+        .w3-sidebar {
+        width: 150px;
+        background-color: #f5c3e0;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        }
+         
+       /* Regra ultra forte para garantir o marrom da Afetiva */
+        main h2, main li, main p, .w3-ul li, #parceiros li{
+        color: #5c3a21 !important; 
+        }
+        /* 2. Regra EXCLUSIVA para os títulos ficarem em negrito */
+        main h2, .w3-ul li:first-child, #parceiros li:first-child {
+        font-weight: bold !important;
+        font-family: Georgia, 'Times New Roman', serif !important;
+        }
+
+        .body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        /* Aproxima as fotos diminuindo o espaço total da galeria e centralizando */
+        .w3-row-padding, .w3-ul {
+        max-width: 900px;  /* Diminua esse número (ex: 800px) se quiser as fotos ainda mais perto */
+        margin: 0 auto !important;   /* Centraliza o bloco de fotos na tela */
+        }
+
+        /* Garante que as fotos fiquem bem ajustadas nas colunas */
+        .w3-third img {
+    margin-bottom: 16px; /* Espaço sutil entre a linha de cima e a de baixo */
+        }   
+    </style>
+</head>
+<body class="w3-white"> 
+    <nav class="w3-sidebar w3-bar-block w3-center">
+        <!-- HOME --> 
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue w3-hover-text-pink w3-text-brown"> 
+            <i class="fa fa-home w3-xxlarge"></i> 
+            <p>HOME</p>
+            </a> 
+        <!-- Parceiros --> 
+        <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue w3-hover-text-pink w3-text-brown"> 
+            <i class="fa fa-handshake-o w3-xxlarge"></i> 
+            <p>PARCEIROS</p>
+        </a> 
+        <!-- FAQ --> 
+        <a href="#FAQ" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue w3-hover-text-pink w3-text-brown"> 
+            <i class="fa fa-envelope w3-xxlarge"></i> 
+            <p>Dúvidas Frequentes</p> 
+            <p>(FAQ)</p>
+        </a> 
+    </nav>
+    <div class="w3-padding-large" id="main"> 
+        <header class="w3-container w3-padding-32 w3-center" id="home"> 
+            <h1> 
+                <img src="IMG/logoafetiva.jpeg" alt="Logo afetiva" class="w3-image"width="300px; height: auto;"> 
+            </h1> 
+            <br> 
+            <h1 class="w3-serif" style="font-weight: bold; font-size: 50px; color: #5c3a21; letter-spacing: 1px;">Afetiva Pães e Doces</h1>
+            <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+                    <span style="padding: 0 15px; font-size: 24px;">🧁</span>
+                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+            </div>
+            <p class="w3-xlarge w3-serif" style="font-weight: light; color: #5c3a21; letter-spacing: 0.5px;">Onde o afeto se torna sabor!</p>
+        </header>
+        <div class="w3-container w3-padding-32 w3-center">
+            <div class="w3-row-padding">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="IMG/pão rústico.jpg" alt="Pão Artesanal" style="width: 200px;; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="IMG/bolo.png" alt="Bolo Recheado" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="IMG/panetone.png" alt="Panetone Trufado" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="IMG/cones.png" alt="Cones Trufados" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="IMG/pão_caseiro.png" alt="Pão Caseiro" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="IMG/nutella.png" alt="Coxnha de Morango com Nutella" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                </div>
+            </div>
+        <main class="w3-content w3-padding-64" id="historia">
+            <ul class="w3-ul w3-hoverable w3-center w3-white">  
+                <li class="w3-pale-red w3-xlarge w3-padding-32">Nossa História</li>
+                <p>Nascemos do desejo de resgatar o prazer das padarias artesanais, onde cada fornada conta uma história.</p>
+                <p>Nossa trajetória é marcada pela busca incessante pelo equilíbrio entre a tradição e a criatividade, sempre colocando o "afeto" como o ingrediente principal de cada preparo.</p>
+                <br>
+            </ul>
+            <ul class="w3-ul w3-hoverable w3-center w3-white"> 
+                <li class="w3-pale-red w3-xlarge w3-padding-32">Missão</li>
+                <p>Proporcionar momentos de felicidade através de produtos artesanais de alta qualidade,</p>
+                <p>nutrindo não apenas o corpo, mas a alma de nossos clientes.</p>
+                <br>
+            </ul>
+            <ul class="w3-ul w3-hoverable w3-center w3-white"> 
+                <li class="w3-pale-red w3-xlarge w3-padding-32">Visão</li> 
+                <p>Ser referência em panificação e confeitaria artesanal.</p>
+                <p>Sendo reconhecida pela excelência técnica e pelo acolhimento único de nossa marca.</p>
+                <br>
+            </ul>
+            <ul class="w3-ul w3-hoverable w3-center w3-white">
+                <li class="w3-pale-red w3-xlarge w3-padding-32">Valores</li>
+                <p>Afetividade, transparência, qualidade absoluta, respeito às Tradições e sustentabilidade.</p>
+            </ul>
+            <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+                    <span style="padding: 0 15px; font-size: 24px;">🧁</span>
+                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+            </div>
+            <div class="w3-container w3-content w3-padding-32" id="parceiros">
+                <ul class="w3-ul w3-hoverable w3-center w3-white w3-content">
+                    <li class="w3-pale-red w3-xlarge w3-padding-32">Marcas Parceiras</li>
+                </ul>
+            </div>    
+            <div class="w3-row-padding w3-center w3-margin-top">
+                <div class="w3-row w3-row-padding">
+                    <div class="w3-third w3-margin-bottom">
+                        <a href="https://famigliaventurelli.com.br/" target="_blank">
+                            <img src="IMG/venturelli.jpg" alt="Venturelli" style="width: 250px;; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                        </a>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <a href="https://www.sicaochocolate.com/pt-BR" target="_blank">
+                            <img src="IMG/sicao-logo.jpg" alt="Sicao" style="width: 250px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                        </a>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <a href="https://www.nutella.com/" target="_blank">
+                            <img src="IMG/nut.jpg" alt="Nutella" style="width: 250px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+                    <span style="padding: 0 15px; font-size: 24px;">🧁</span>
+                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+            </div>
+            <div class="w3-padding-128 w3-content w3-text-grey" id="FAQ"> 
+                <h3 class="w3-text-pink">Dúvidas Frequentes (FAQ)</h3>
+        
+            <div class="w3-card w3-round w3-white" style="border: 1px solid #fad2e1;">
+            
+            <div class="w3-container w3-padding-16 w3-border-bottom w3-border-light-grey">
+                <p class="titulo-faq"><strong>✨ Como funcionam as encomendas?</strong></p>
+                <p class="resposta-faq">Aceitamos encomendas de bolos e doces com antecedência mínima de 3 dias úteis. Para garantir sua data, fale conosco pelo WhatsApp!</p>
+            </div>
+
+            <div class="w3-container w3-padding-16 w3-border-bottom w3-border-light-grey">
+                <p class="titulo-faq"><strong>🥖 Quais dias têm pão fresco?</strong></p>
+                <p class="resposta-faq">Nossos pães de fermentação natural são assados todas as quintas e sábados pela manhã. Faça sua reserva para não ficar sem!</p>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p class="titulo-faq"><strong>🚗 Vocês fazem entregas?</strong></p>
+                <p class="resposta-faq">Sim! Fazemos entregas agendadas em Sorocaba. A taxa varia de acordo com o seu bairro, ou se preferir, a retirada pode ser feita no nosso espaço.</p>
+                <br>
+            </div>
+
+        </div>
+    </div>   
+        <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+            <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+                <span style="padding: 0 15px; font-size: 24px;">🧁</span>
+            <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
+            <br>
+        </div> 
+        <div class="w3-padding-128 w3-content w3-text-grey" id="contato"> 
+                <h2 class="w3-text-pink">Entre em Contato</h2> 
+                <hr style="width:200px" class="w3-opacity">
+                <div class="w3-section; w3-text-gray">  
+                    <p>
+                    <a href="https://www.instagram.com/afetivapaes.doces/" target="_blank" style="text-decoration: none; color: inherit;"> 
+                    <i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin- right; font-weight: bold"></i> Instagram:@afetivapaes.doces</p> 
+                    </a>
+                    <p> 
+                    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin- right; font-weight: bold"> </i> Email: confeitariaartesanaldalaura@gmail.com</p> 
+                    <br>
+                </div>
+            <form> 
+                <p> 
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome"> 
+                </p> 
+                <p> 
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"> 
+                </p> 
+                <p> 
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto"> 
+                </p> 
+                <p> 
+                    <input class="w3-input w3-padding-16" placeholder="Menssagem" required name="Mensagem"> 
+                </p> 
+                <p> 
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit"> 
+                    <i class="fa fa-paper-plane"></i> Enviar mensagem 
+                    </button> 
+                </p> 
+            </form> 
+            </div>
+        </main>
+        <footer class="w3-container w3-center w3-padding-32" style="background-color: #fff0f3; margin-top: 64px; border-top: 1px solid #fad2e1;">
+        <p class="texto-rodape" style="font-family: Georgia, serif; font-style: italic; font-size: 16px; margin-bottom: 8px;">
+            Feito à mão, com amor e afeto. ✨
+        </p>
+    
+        <p class="texto-rodape" style="font-size: 13px; margin: 0; opacity: 0.8;">
+            &copy; 2026 Afetiva Pães e Doces. Todos os direitos reservados.
+        </p>
+        <p class="texto-rodape" style="font-size: 11px; margin-top: 4px; opacity: 0.6;">
+            Desenvolvido com carinho por Laura🤎
+        </p>
+    </footer>
+</body>
+</html>
