@@ -49,4 +49,4 @@ Projeto criado com muito carinho para a confeitaria artesanal da Laura. 🤎
 ---
 ## Site Online 🧁✨
 
-https://laurahelena93.github.io/Afetiva_Paes_Doces/
+[https://laurahelena93.github.io/Afetiva_Paes_Doces/](https://laurahelena93.github.io/Afetiva_Paes_Doces/)
