@@ -43,6 +43,10 @@ O projeto foi construído do zero focando em performance, semântica e leveza:
 
 ##  👩‍🍳 Desenvolvedor
 Projeto criado com muito carinho para a confeitaria artesanal da Laura. 🤎
+---
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-5C3A21?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/laura-santosh/)
 
 ---
+## Site Online 🧁✨
+
+https://laurahelena93.github.io/Afetiva_Paes_Doces/
