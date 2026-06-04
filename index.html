@@ -20,11 +20,11 @@
         }
          
        /* Regra ultra forte para garantir o marrom da Afetiva */
-        main h2, main li, main p, .w3-ul li, #parceiros li{
+        main h2, main li, main p, .w3-ul li, #produtos, #parceiros li{
         color: #5c3a21 !important; 
         }
         /* 2. Regra EXCLUSIVA para os títulos ficarem em negrito */
-        main h2, .w3-ul li:first-child, #parceiros li:first-child {
+        main h2, .w3-ul li:first-child, #parceiros li:first-child, #produtos .w3-xlarge {
         font-weight: bold !important;
         font-family: Georgia, 'Times New Roman', serif !important;
         }
@@ -35,23 +35,28 @@
             height: 100%;
         }
         /* Aproxima as fotos diminuindo o espaço total da galeria e centralizando */
-        .w3-row-padding, .w3-ul {
-        max-width: 900px;  /* Diminua esse número (ex: 800px) se quiser as fotos ainda mais perto */
-        margin: 0 auto !important;   /* Centraliza o bloco de fotos na tela */
+        .w3-ul, #parceiros .w3-ul {
+        max-width: 900px; /* Limita a largura total da galeria */
+        margin: 0 auto;   /* Centraliza o bloco de fotos na tela */
         }
-
-        /* Garante que as fotos fiquem bem ajustadas nas colunas */
-        .w3-third img {
-    margin-bottom: 16px; /* Espaço sutil entre a linha de cima e a de baixo */
-        }   
+  
+        .mySlides { /* Esconde as fotos inicialmente para o slideshow funcionar corretamente */
+            display:none; 
+        }
+    
     </style>
 </head>
 <body class="w3-white"> 
-    <nav class="w3-sidebar w3-bar-block w3-center">
+    <nav class="w3-sidebar w3-bar-block w3-center"> <!--barra lateral-->
         <!-- HOME --> 
         <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue w3-hover-text-pink w3-text-brown"> 
             <i class="fa fa-home w3-xxlarge"></i> 
             <p>HOME</p>
+            </a> 
+        <!-- PRODUTOS --> 
+        <a href="#produtos" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue w3-hover-text-pink w3-text-brown"> 
+            <i class="fa fa-shopping-bag w3-xxlarge"></i> 
+            <p>PRODUTOS</p>
             </a> 
         <!-- Parceiros --> 
         <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue w3-hover-text-pink w3-text-brown"> 
@@ -72,35 +77,29 @@
             </h1> 
             <br> 
             <h1 class="w3-serif" style="font-weight: bold; font-size: 50px; color: #5c3a21; letter-spacing: 1px;">Afetiva Pães e Doces</h1>
-            <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+            <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;"> <!-- Linha divisória -->
                 <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
                     <span style="padding: 0 15px; font-size: 24px;">🧁</span>
                 <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
             </div>
             <p class="w3-xlarge w3-serif" style="font-weight: light; color: #5c3a21; letter-spacing: 0.5px;">Onde o afeto se torna sabor!</p>
         </header>
-        <div class="w3-container w3-padding-32 w3-center">
-            <div class="w3-row-padding">
-                <div class="w3-third w3-margin-bottom">
-                    <img src="img/rustico.jpg" alt="Pão Artesanal" style="width: 200px;; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                </div>
-                <div class="w3-third w3-margin-bottom">
-                    <img src="img/bolo.png" alt="Bolo Recheado" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                </div>
-                <div class="w3-third w3-margin-bottom">
-                    <img src="img/panetone.png" alt="Panetone Trufado" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                </div>
-                <div class="w3-third w3-margin-bottom">
-                    <img src="img/cones.png" alt="Cones Trufados" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                </div>
-                <div class="w3-third w3-margin-bottom">
-                    <img src="img/caseiro.png" alt="Pão Caseiro" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                </div>
-                <div class="w3-third w3-margin-bottom">
-                    <img src="img/nutella.png" alt="Coxnha de Morango com Nutella" style="width: 200px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                </div>
-            </div>
-        <main class="w3-content w3-padding-64" id="historia">
+        <div class="w3-content w3-display-container" id="produtos" class="mySlides"> <!-- Galeria de fotos -->
+            <ul class="w3-ul w3-hoverable w3-center w3-white">  
+                <li class="w3-pale-red w3-xlarge w3-padding-32">Nossos Produtos</li>
+                <br>
+            </ul>
+            <img class="mySlides" src="img/rustico.jpg" alt="Pão Artesanal" style="width: 300px; height:400px; object-fit: cover; margin: 0 auto;">
+            <img class="mySlides" src="img/bolo.png" alt="Bolo Recheado" style="width: 300px; height:400px; object-fit: cover; margin: 0 auto;">
+            <img class="mySlides" src="img/panetone.png" alt="Panetone Trufado" style="width:300px; height:400px; object-fit: cover; margin: 0 auto;">
+            <img class="mySlides" src="img/cones.png" alt="Cones Trufados" style="width:300px; height:400px; object-fit: cover; margin: 0 auto;">
+            <img class="mySlides" src="img/caseiro.png" alt="Pão Caseiro" style="width:300px; height:400px; object-fit: cover; margin: 0 auto;">
+            <img class="mySlides" src="img/nutella.png" alt="Coxnha de Morango com Nutella" style="width:300px; height:400px; object-fit: cover; margin: 0 auto;">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+        <main class="w3-content w3-padding-64" id="historia"> <!-- História, Missão, Visão e Valores -->
             <ul class="w3-ul w3-hoverable w3-center w3-white">  
                 <li class="w3-pale-red w3-xlarge w3-padding-32">Nossa História</li>
                 <p>Nascemos do desejo de resgatar o prazer das padarias artesanais, onde cada fornada conta uma história.</p>
@@ -123,33 +122,28 @@
                 <li class="w3-pale-red w3-xlarge w3-padding-32">Valores</li>
                 <p>Afetividade, transparência, qualidade absoluta, respeito às Tradições e sustentabilidade.</p>
             </ul>
-            <div class="w3-container w3-center" style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
-                    <span style="padding: 0 15px; font-size: 24px;">🧁</span>
-                <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
-            </div>
-            <div class="w3-container w3-content w3-padding-32" id="parceiros">
+        
+            <div class="w3-container w3-content w3-padding-64" id="parceiros">
                 <ul class="w3-ul w3-hoverable w3-center w3-white w3-content">
                     <li class="w3-pale-red w3-xlarge w3-padding-32">Marcas Parceiras</li>
                 </ul>
             </div>    
-            <div class="w3-row-padding w3-center w3-margin-top">
-                <div class="w3-row w3-row-padding">
-                    <div class="w3-third w3-margin-bottom">
-                        <a href="https://famigliaventurelli.com.br/" target="_blank">
-                            <img src="img/venturelli.jpg" alt="Venturelli" style="width: 250px;; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                        </a>
-                    </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <a href="https://www.sicaochocolate.com/pt-BR" target="_blank">
-                            <img src="img/sicao-logo.jpg" alt="Sicao" style="width: 250px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                        </a>
-                    </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <a href="https://www.nutella.com/" target="_blank">
-                            <img src="img/nut.jpg" alt="Nutella" style="width: 250px; height: 250px; object-fit: cover;" class="w3-hover-opacity w3-round">
-                        </a>
-                    </div>
+            <div class="w3-container w3-content w3-center w3-padding-24">
+                <div class="w3-third w3-margin-bottom"> 
+                    <a href="https://famigliaventurelli.com.br/" target="_blank">
+                        <img src="img/venturelli.jpg" alt="Venturelli" style="width: 230px; height: 230px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                    </a>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <a href="https://www.sicaochocolate.com/pt-BR" target="_blank">
+                        <img src="img/sicao-logo.jpg" alt="Sicao" style="width: 230px; height: 230px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                    </a>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <a href="https://www.nutella.com/" target="_blank">
+                        <img src="img/nut.jpg" alt="Nutella" style="width: 230px; height: 230px; object-fit: cover;" class="w3-hover-opacity w3-round">
+                    </a>
+                    <br>
                 </div>
             </div>
         </div>
@@ -187,19 +181,19 @@
             <div style="flex: 0 1 100px; border-bottom: 1px solid #fad2e1;"></div>
             <br>
         </div> 
-        <div class="w3-padding-128 w3-content w3-text-grey" id="contato"> 
+        <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
                 <h2 class="w3-text-pink">Entre em Contato</h2> 
                 <hr style="width:200px" class="w3-opacity">
-                <div class="w3-section; w3-text-gray">  
+                <div class="w3-section; w3-text-gray" style="background-color: #fff0f3; margin-top: 64px; border-top: 1px solid #fad2e1;">  
                     <p>
                     <a href="https://www.instagram.com/afetivapaes.doces/" target="_blank" style="text-decoration: none; color: inherit;"> 
-                    <i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin- right; font-weight: bold"></i> Instagram:@afetivapaes.doces</p> 
+                    <i class="fa fa-instagram fa-fw w3-text-grey w3-xxlarge w3-margin- right; font-weight: bold"></i> Instagram:@afetivapaes.doces</p> 
                     </a>
                     <p> 
-                    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin- right; font-weight: bold"> </i> Email: confeitariaartesanaldalaura@gmail.com</p> 
+                    <i class="fa fa-envelope fa-fw w3-text-grey w3-xxlarge w3-margin- right; font-weight: bold"> </i> Email: confeitariaartesanaldalaura@gmail.com</p> 
                     <br>
                 </div>
-            <form> 
+            <form> <!-- Formulário de contato -->
                 <p> 
                     <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome"> 
                 </p> 
@@ -225,12 +219,32 @@
             Feito à mão, com amor e afeto. ✨
         </p>
     
-        <p class="texto-rodape" style="font-size: 13px; margin: 0; opacity: 0.8;">
+        <p class="texto-rodape" style="font-size: 13px; margin: 0; opacity: 0.8;"> <!-- Copyright -->
             &copy; 2026 Afetiva Pães e Doces. Todos os direitos reservados.
         </p>
         <p class="texto-rodape" style="font-size: 11px; margin-top: 4px; opacity: 0.6;">
             Desenvolvido com carinho por Laura🤎
         </p>
     </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+
 </body>
 </html>

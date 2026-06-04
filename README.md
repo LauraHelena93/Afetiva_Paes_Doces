@@ -40,6 +40,19 @@ O projeto foi construído do zero focando em performance, semântica e leveza:
 * **Fundo de Destaque:** `#fff0f3` (Rodapé e Seções Especiais)
 
 ---
+  
+## 🔄 Atualização: Slide de Produtos Dinâmico (JavaScript)
+
+O carrossel da galeria de produtos foi completamente refatorado. Removemos a estrutura antiga de imagens fixas em HTML que quebrava o alinhamento e o carregamento da página. Agora, o slide é gerado e controlado puramente via **JavaScript Assíncrono/Dinâmico**, garantindo melhor performance e total responsividade.
+
+### 🛠️ O que mudou?
+* **HTML Limpo:** A galeria estática foi substituída por um único container responsivo gerenciado por um ID (`#slide-produtos`).
+* **Estrutura de Dados:** Os produtos (imagens, textos alternativos e descrições) agora ficam organizados dentro de um array de objetos no JavaScript, facilitando a manutenção e futuras adições de produtos.
+* **Manipulação do DOM:** O JavaScript injeta dinamicamente o HTML da imagem atual e gerencia os botões de navegação avançar/voltar.
+* **Correção de Sintaxe CSS:** Ajustadas as regras de estilo de dimensionamento (`!important`) eliminando conflitos de renderização no navegador.
+
+
+---
 
 ##  👩‍🍳 Desenvolvedor
 Projeto criado com muito carinho para a confeitaria artesanal da Laura. 🤎
